@@ -33,11 +33,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/uglide/RedisDesktopManager",
-                    "commit": "fe952001934598cc09ddac3817612adc7850f924",
+                    "commit": "01375b1100dbb2b0a73b0973d5000055be8134a9",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
-                    }
+                    },
+                    "tag": "2021.7"
                 }
             ]
         }
