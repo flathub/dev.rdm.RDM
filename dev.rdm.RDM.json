@@ -38,7 +38,10 @@
             "builddir": true,
             "build-commands": [
                 "pushd ./3rdparty/lz4/build/cmake && cmake -DBUILD_STATIC_LIBS=true && make -j $FLATPAK_BUILDER_N_JOBS && popd",
-                "pushd ./src && lrelease rdm.pro && qmake VERSION=\"$(git describe --abbrev=0 --tags|echo '2021')+$(git rev-parse --short HEAD)\" && make -j $FLATPAK_BUILDER_N_JOBS && popd",
+                "pushd ./3rdparty/zstd/build/cmake && cmake -DZSTD_BUILD_PROGRAMS=OFF . && make -j $FLATPAK_BUILDER_N_JOBS && popd",
+                "pushd ./3rdparty/snappy && cmake -DSNAPPY_BUILD_BENCHMARKS=OFF -DSNAPPY_BUILD_TESTS=OFF . && make -j $FLATPAK_BUILDER_N_JOBS && popd",
+                "pushd ./3rdparty/brotli && cmake . && make -j $FLATPAK_BUILDER_N_JOBS && ls -ahl && popd",
+                "pushd ./src && lrelease rdm.pro && qmake LIBS+=-L/app/lib VERSION=\"$(git describe --abbrev=0 --tags|echo '2021')+$(git rev-parse --short HEAD)\" && make -j $FLATPAK_BUILDER_N_JOBS && popd",
                 "cp ./bin/linux/release/rdm $FLATPAK_DEST/bin"
             ],
             "post-install": [
@@ -50,12 +53,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/uglide/RedisDesktopManager",
-                    "commit": "e9e1799d04768cd5be63377cfb2d31327d3e2be9",
+                    "commit": "eef81c59aef89bd69a2fc8aa8089f2e9ac66075c",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     },
-                    "tag": "2021.8"
+		    "tag": "2021.9"
+                    
                 },
                 {
                     "type": "archive",
