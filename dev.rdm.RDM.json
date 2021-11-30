@@ -57,7 +57,8 @@
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
-                    }                    
+                    },
+	  	    "tag": "2021.9.1"
                 },
                 {
                     "type": "archive",
