@@ -64,7 +64,7 @@
                     "url": "https://rdm-dev.nyc3.digitaloceanspaces.com/snap/deps.zip?v3",
                     "dest-filename": "deps.zip",
                     "dest": "./3rdparty/qredisclient",
-                    "sha256": "4f691fb4cdd3dcd899bfab7048e23d2d86f6f05035fb2b368afafa63ea23ebb2"
+                    "sha256": "7d8394bb686555865b2e752ea21582a6ede59150b233d311e1a28bf0b4c70b48"
                 }
             ]
         }
