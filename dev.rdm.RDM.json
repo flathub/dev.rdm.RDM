@@ -53,7 +53,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/uglide/RedisDesktopManager",
-                    "commit": "eef81c59aef89bd69a2fc8aa8089f2e9ac66075c",
+                    "commit": "306080dcea8cec2228bfef58270fb1a7fbb594ed",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
