@@ -15,23 +15,23 @@
     ],
     "modules": [
         "pip-dependencies.json",
-         {
-	      "name": "botan-2",
-	      "buildsystem": "simple",
-	      "build-commands": [
-		"./configure.py --prefix=/app --disable-cc-tests --without-documentation",
-		"make -j $FLATPAK_BUILDER_N_JOBS",
-		"make install"
-	      ],
-	      "sources": [
-		{
-		  "type": "git",
-		  "url": "https://github.com/randombit/botan.git",
-		  "tag": "2.15.0",
-		  "commit": "3ed6eaa3c1236aed844f5475e2df8b89b3286ac4"		  
-		}
-	      ]
-	},
+        {
+            "name": "botan-2",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure.py --prefix=/app --disable-cc-tests --without-documentation",
+                "make -j $FLATPAK_BUILDER_N_JOBS",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/randombit/botan.git",
+                    "tag": "2.15.0",
+                    "commit": "3ed6eaa3c1236aed844f5475e2df8b89b3286ac4"
+                }
+            ]
+        },
         {
             "name": "rdm",
             "buildsystem": "simple",
@@ -53,12 +53,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/uglide/RedisDesktopManager",
-                    "commit": "eef81c59aef89bd69a2fc8aa8089f2e9ac66075c",
+                    "commit": "22864c25f837e9bcb5bbd9978e9f818cce7448e2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
                     },
-	  	    "tag": "2021.9.1"
+                    "tag": "2021.9.1"
                 },
                 {
                     "type": "archive",
