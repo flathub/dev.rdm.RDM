@@ -1,5 +1,7 @@
 {
   "automerge-flathubbot-prs": true,
   "only-arches": ["x86_64"],
-  "publish-delay-hours": 0
+  "publish-delay-hours": 0,
+  "end-of-life": "The application has been renamed to RESP.app",
+  "end-of-life-rebase": "app.resp.RESP"
 }
